@@ -15,14 +15,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+        
+        PlusButtonSubclass.registerSubclass()
 
+        application.statusBarStyle = UIStatusBarStyle.LightContent
+        UINavigationBar.appearance().barTintColor = UIColor.init(red: 33/255, green: 150/255, blue: 243/255, alpha: 1)
+        UINavigationBar.appearance().tintColor = UIColor.whiteColor()
+        UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName: UIColor.whiteColor()]
+        
         let mapManager = BMKMapManager()
         mapManager.start("fNKKBUZAnepOKW3cDr1763fV", generalDelegate: nil)
         
         self.window = UIWindow()
         self.window!.frame = UIScreen.mainScreen().bounds
-        self.window!.rootViewController = MapController()
+        self.window!.rootViewController = MainTabBarController()
         self.window!.makeKeyAndVisible()
+        
+        
         
         return true
     }
