@@ -1,10 +1,16 @@
 PODS:
   - BaiduMapKit (2.9.1)
+  - Reindeer (0.1.1)
+  - SnapKit (0.18.0)
 
 DEPENDENCIES:
   - BaiduMapKit
+  - Reindeer
+  - SnapKit
 
 SPEC CHECKSUMS:
   BaiduMapKit: 97d2d44b41a876de2371fb91ddf78cdf84dafa05
+  Reindeer: 732796cb76bef40c1ec726017533ec31c2b414a5
+  SnapKit: e1f090a6d47b1dd4bd89b73f72b6746a7835ef3c
 
 COCOAPODS: 0.39.0
