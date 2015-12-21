@@ -14,6 +14,12 @@ class HomeController: UIViewController {
 
     @IBOutlet weak var scrollLayout: UIView!
     
+    @IBOutlet weak var circleListLayout: HMTouchView!
+    @IBOutlet weak var personListLayout: HMTouchView!
+    @IBOutlet weak var priceListLayout: HMTouchView!
+    @IBOutlet weak var marketLayout: HMTouchView!
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -22,6 +28,7 @@ class HomeController: UIViewController {
         self.edgesForExtendedLayout = UIRectEdge.None
         
         initBanner()
+        initLayout()
     }
 
     ///广告位
@@ -52,6 +59,24 @@ class HomeController: UIViewController {
         ]
         
         anotherBanner.startRolling()
+    }
+    
+    func initLayout(){
+        HMTouchView.setOnClickHandler([circleListLayout,personListLayout,priceListLayout,marketLayout]) { (id) -> Void in
+            print(id)
+        }
+//        circleListLayout.click { (id) -> Void in
+//            print("hello")
+//        }
+//        personListLayout.click { (id) -> Void in
+//            print("hello")
+//        }
+//        priceListLayout.click { (id) -> Void in
+//            print("hello")
+//        }
+//        marketLayout.click { (id) -> Void in
+//            print("hello")
+//        }
     }
     
     override func didReceiveMemoryWarning() {

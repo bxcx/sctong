@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		323748481C2468A900048B2A /* MapController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323748471C2468A900048B2A /* MapController.swift */; };
 		3250E0461C259CB300465DBE /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3250E0451C259CB300465DBE /* HomeController.swift */; };
+		32A4E6EC1C28456500A6ECBC /* HMTouchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A4E6EB1C28456500A6ECBC /* HMTouchView.swift */; };
 		32ACC7771C279B0E0019C36A /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32ACC76A1C279B0E0019C36A /* ImageCache.swift */; };
 		32ACC7781C279B0E0019C36A /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32ACC76B1C279B0E0019C36A /* ImageDownloader.swift */; };
 		32ACC7791C279B0E0019C36A /* ImageTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32ACC76C1C279B0E0019C36A /* ImageTransition.swift */; };
@@ -43,6 +44,7 @@
 		323748411C2462E700048B2A /* sctong-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "sctong-Bridging-Header.h"; sourceTree = "<group>"; };
 		323748471C2468A900048B2A /* MapController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapController.swift; sourceTree = "<group>"; };
 		3250E0451C259CB300465DBE /* HomeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
+		32A4E6EB1C28456500A6ECBC /* HMTouchView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HMTouchView.swift; sourceTree = "<group>"; };
 		32ACC76A1C279B0E0019C36A /* ImageCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
 		32ACC76B1C279B0E0019C36A /* ImageDownloader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageDownloader.swift; sourceTree = "<group>"; };
 		32ACC76C1C279B0E0019C36A /* ImageTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageTransition.swift; sourceTree = "<group>"; };
@@ -91,6 +93,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		32A4E6EA1C2844A500A6ECBC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				32A4E6EB1C28456500A6ECBC /* HMTouchView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		32ACC7691C279B0E0019C36A /* Kingfisher */ = {
 			isa = PBXGroup;
 			children = (
@@ -114,6 +124,7 @@
 		32F4F9A91C25369400BB4005 /* Library */ = {
 			isa = PBXGroup;
 			children = (
+				32A4E6EA1C2844A500A6ECBC /* View */,
 				32F4F9AA1C25369400BB4005 /* Resource */,
 			);
 			path = Library;
@@ -395,6 +406,7 @@
 				3250E0461C259CB300465DBE /* HomeController.swift in Sources */,
 				32ACC77A1C279B0E0019C36A /* KingfisherManager.swift in Sources */,
 				32ACC7821C279B0E0019C36A /* UIImageView+Kingfisher.swift in Sources */,
+				32A4E6EC1C28456500A6ECBC /* HMTouchView.swift in Sources */,
 				32ACC7781C279B0E0019C36A /* ImageDownloader.swift in Sources */,
 				32F4F9B21C25369400BB4005 /* CYLPlusButton.m in Sources */,
 				32ACC77B1C279B0E0019C36A /* KingfisherOptions.swift in Sources */,

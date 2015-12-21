@@ -90,7 +90,7 @@
                                                                     <constraint firstAttribute="width" constant="0.5" id="RHE-d2-i9w"/>
                                                                 </constraints>
                                                             </view>
-                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oui-fw-qwf">
+                                                            <view contentMode="scaleToFill" restorationIdentifier="circleListLayout" translatesAutoresizingMaskIntoConstraints="NO" id="oui-fw-qwf" customClass="HMTouchView" customModule="sctong" customModuleProvider="target">
                                                                 <rect key="frame" x="0.0" y="0.0" width="300.5" height="89.5"/>
                                                                 <subviews>
                                                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_shangquan" translatesAutoresizingMaskIntoConstraints="NO" id="TGM-Rz-Mz7">
@@ -126,7 +126,7 @@
                                                                     <constraint firstAttribute="trailing" secondItem="TGM-Rz-Mz7" secondAttribute="trailing" constant="15" id="zIb-2C-oxV"/>
                                                                 </constraints>
                                                             </view>
-                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HAL-cV-N0C">
+                                                            <view contentMode="scaleToFill" restorationIdentifier="personListLayout" translatesAutoresizingMaskIntoConstraints="NO" id="HAL-cV-N0C" customClass="HMTouchView" customModule="sctong" customModuleProvider="target">
                                                                 <rect key="frame" x="300" y="0.0" width="300" height="89.5"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="咨询专家" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="glE-Gw-cd3">
@@ -162,7 +162,7 @@
                                                                     <constraint firstItem="S91-Tc-MuQ" firstAttribute="leading" secondItem="glE-Gw-cd3" secondAttribute="leading" id="xze-3u-D5p"/>
                                                                 </constraints>
                                                             </view>
-                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kuf-e5-dJm">
+                                                            <view contentMode="scaleToFill" restorationIdentifier="priceListLayout" translatesAutoresizingMaskIntoConstraints="NO" id="Kuf-e5-dJm" customClass="HMTouchView" customModule="sctong" customModuleProvider="target">
                                                                 <rect key="frame" x="0.0" y="89" width="300.5" height="90"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="建材价格" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u9d-Mx-99C">
@@ -198,7 +198,7 @@
                                                                     <constraint firstItem="68A-LK-F8I" firstAttribute="top" secondItem="u9d-Mx-99C" secondAttribute="top" id="rEv-Fc-bir"/>
                                                                 </constraints>
                                                             </view>
-                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vok-fL-x6i">
+                                                            <view contentMode="scaleToFill" restorationIdentifier="marketLayout" translatesAutoresizingMaskIntoConstraints="NO" id="vok-fL-x6i" customClass="HMTouchView" customModule="sctong" customModuleProvider="target">
                                                                 <rect key="frame" x="300" y="89" width="300" height="90"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="市场供求" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fhs-zy-znB">
@@ -290,7 +290,7 @@
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="最新市场价" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WKc-y7-pSk">
                                                                         <rect key="frame" x="20" y="14" width="70" height="17"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="14" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qUN-Ot-kCO">
@@ -313,7 +313,7 @@
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="最新信息价" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ofa-rE-8jC">
                                                                         <rect key="frame" x="20" y="14" width="70" height="17"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="266" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tZe-7h-FJa">
@@ -336,7 +336,7 @@
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="新增供应" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F8u-qf-pHG">
                                                                         <rect key="frame" x="20" y="14" width="56" height="17"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="22" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xmm-xf-3wT">
@@ -359,7 +359,7 @@
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="新增求购" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8ay-CJ-Ulo">
                                                                         <rect key="frame" x="20" y="14" width="56" height="17"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="104" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sAr-LU-wlQ">
@@ -516,6 +516,10 @@
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="600" height="900"/>
                     <connections>
+                        <outlet property="circleListLayout" destination="oui-fw-qwf" id="fto-nH-cKn"/>
+                        <outlet property="marketLayout" destination="vok-fL-x6i" id="De5-nt-AMN"/>
+                        <outlet property="personListLayout" destination="HAL-cV-N0C" id="ioY-76-Kh3"/>
+                        <outlet property="priceListLayout" destination="Kuf-e5-dJm" id="bJJ-5Q-cy8"/>
                         <outlet property="scrollLayout" destination="rId-ex-Eog" id="hSB-z2-jWx"/>
                     </connections>
                 </viewController>
