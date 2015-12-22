@@ -10,6 +10,9 @@
 		323748481C2468A900048B2A /* MapController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323748471C2468A900048B2A /* MapController.swift */; };
 		324018261C2919F100DC1B43 /* PersonalController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324018251C2919F100DC1B43 /* PersonalController.swift */; };
 		324018281C291BBA00DC1B43 /* ConnectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324018271C291BBA00DC1B43 /* ConnectionController.swift */; };
+		3240182B1C29911900DC1B43 /* JSONHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3240182A1C29911900DC1B43 /* JSONHelper.swift */; };
+		3240182D1C29913D00DC1B43 /* HMRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3240182C1C29913D00DC1B43 /* HMRequest.swift */; };
+		3240182F1C29977D00DC1B43 /* NewsDomain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3240182E1C29977D00DC1B43 /* NewsDomain.swift */; };
 		3250E0461C259CB300465DBE /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3250E0451C259CB300465DBE /* HomeController.swift */; };
 		32A4E6EC1C28456500A6ECBC /* HMTouchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A4E6EB1C28456500A6ECBC /* HMTouchView.swift */; };
 		32ACC7771C279B0E0019C36A /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32ACC76A1C279B0E0019C36A /* ImageCache.swift */; };
@@ -47,6 +50,9 @@
 		323748471C2468A900048B2A /* MapController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapController.swift; sourceTree = "<group>"; };
 		324018251C2919F100DC1B43 /* PersonalController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonalController.swift; sourceTree = "<group>"; };
 		324018271C291BBA00DC1B43 /* ConnectionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectionController.swift; sourceTree = "<group>"; };
+		3240182A1C29911900DC1B43 /* JSONHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONHelper.swift; sourceTree = "<group>"; };
+		3240182C1C29913D00DC1B43 /* HMRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HMRequest.swift; sourceTree = "<group>"; };
+		3240182E1C29977D00DC1B43 /* NewsDomain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsDomain.swift; sourceTree = "<group>"; };
 		3250E0451C259CB300465DBE /* HomeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 		32A4E6EB1C28456500A6ECBC /* HMTouchView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HMTouchView.swift; sourceTree = "<group>"; };
 		32ACC76A1C279B0E0019C36A /* ImageCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
@@ -97,6 +103,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		324018291C29911900DC1B43 /* Http */ = {
+			isa = PBXGroup;
+			children = (
+				3240182A1C29911900DC1B43 /* JSONHelper.swift */,
+				3240182C1C29913D00DC1B43 /* HMRequest.swift */,
+			);
+			path = Http;
+			sourceTree = "<group>";
+		};
 		32A4E6EA1C2844A500A6ECBC /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -128,6 +143,7 @@
 		32F4F9A91C25369400BB4005 /* Library */ = {
 			isa = PBXGroup;
 			children = (
+				324018291C29911900DC1B43 /* Http */,
 				32A4E6EA1C2844A500A6ECBC /* View */,
 				32F4F9AA1C25369400BB4005 /* Resource */,
 			);
@@ -198,6 +214,7 @@
 			children = (
 				32F4F9BE1C253AD900BB4005 /* Home.storyboard */,
 				3250E0451C259CB300465DBE /* HomeController.swift */,
+				3240182E1C29977D00DC1B43 /* NewsDomain.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -410,6 +427,7 @@
 				32ACC7801C279B0E0019C36A /* UIButton+Kingfisher.swift in Sources */,
 				32F4F9B91C2537F900BB4005 /* MainTabBarController.swift in Sources */,
 				32ACC77C1C279B0E0019C36A /* KingfisherOptionsInfo.swift in Sources */,
+				3240182D1C29913D00DC1B43 /* HMRequest.swift in Sources */,
 				3250E0461C259CB300465DBE /* HomeController.swift in Sources */,
 				32ACC77A1C279B0E0019C36A /* KingfisherManager.swift in Sources */,
 				32ACC7821C279B0E0019C36A /* UIImageView+Kingfisher.swift in Sources */,
@@ -420,7 +438,9 @@
 				324018281C291BBA00DC1B43 /* ConnectionController.swift in Sources */,
 				32F4F9B31C25369400BB4005 /* CYLTabBar.m in Sources */,
 				32ACC7811C279B0E0019C36A /* UIImage+Extension.swift in Sources */,
+				3240182B1C29911900DC1B43 /* JSONHelper.swift in Sources */,
 				32ACC77F1C279B0E0019C36A /* ThreadHelper.swift in Sources */,
+				3240182F1C29977D00DC1B43 /* NewsDomain.swift in Sources */,
 				32FD4E881C245DD200BDEE08 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

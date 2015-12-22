@@ -52,13 +52,24 @@ class HomeController: UIViewController {
             print(index)
         })
         
-        anotherBanner.images = [
-            "http://pic9.nipic.com/20100817/4845745_124224113296_2.jpg",
-            "http://pic26.nipic.com/20121223/11613623_164837493315_2.jpg",
-            "http://pic2.ooopic.com/10/79/67/75b1OOOPIC15.jpg"
-        ]
+        //请求地址
+        let url = "http://apis.baidu.com/cd_boco/chinanews/testnewsapi"
+        //如果需要传参
+        let params = ["query":"{'device':'android','catid':1,'pagesize':3,'sid':'11142'}"]
         
-        anotherBanner.startRolling()
+        HMRequest<NewsDomain>.get(url, params: params) { (news, error) -> () in
+            print(news)
+            
+            var thumbUrls:[AnyObject?] = []
+            for data in (news?.data)! {
+                thumbUrls.append(data.thumb!)
+            }
+            
+            anotherBanner.images = thumbUrls
+            anotherBanner.startRolling()
+        }
+        
+
     }
     
     func initLayout(){

@@ -1,14 +1,17 @@
 PODS:
+  - Alamofire (3.1.4)
   - BaiduMapKit (2.9.1)
   - Reindeer (0.1.1)
   - SnapKit (0.18.0)
 
 DEPENDENCIES:
+  - Alamofire
   - BaiduMapKit
   - Reindeer
   - SnapKit
 
 SPEC CHECKSUMS:
+  Alamofire: fbc829692f351fa1d8a31dd75fd7f7f56fea31fb
   BaiduMapKit: 97d2d44b41a876de2371fb91ddf78cdf84dafa05
   Reindeer: 732796cb76bef40c1ec726017533ec31c2b414a5
   SnapKit: e1f090a6d47b1dd4bd89b73f72b6746a7835ef3c
