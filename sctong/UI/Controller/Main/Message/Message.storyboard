@@ -14,11 +14,13 @@
                         <viewControllerLayoutGuide type="bottom" id="Gpx-1Q-fd9"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="u8c-1o-lh5">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="消息" id="esl-k3-Ib1"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="600"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uw9-fA-gTQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

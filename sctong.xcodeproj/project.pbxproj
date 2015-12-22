@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		323748481C2468A900048B2A /* MapController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323748471C2468A900048B2A /* MapController.swift */; };
+		324018261C2919F100DC1B43 /* PersonalController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324018251C2919F100DC1B43 /* PersonalController.swift */; };
+		324018281C291BBA00DC1B43 /* ConnectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324018271C291BBA00DC1B43 /* ConnectionController.swift */; };
 		3250E0461C259CB300465DBE /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3250E0451C259CB300465DBE /* HomeController.swift */; };
 		32A4E6EC1C28456500A6ECBC /* HMTouchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A4E6EB1C28456500A6ECBC /* HMTouchView.swift */; };
 		32ACC7771C279B0E0019C36A /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32ACC76A1C279B0E0019C36A /* ImageCache.swift */; };
@@ -43,6 +45,8 @@
 		2B3F5FE12BD970E376114AB3 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		323748411C2462E700048B2A /* sctong-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "sctong-Bridging-Header.h"; sourceTree = "<group>"; };
 		323748471C2468A900048B2A /* MapController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapController.swift; sourceTree = "<group>"; };
+		324018251C2919F100DC1B43 /* PersonalController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonalController.swift; sourceTree = "<group>"; };
+		324018271C291BBA00DC1B43 /* ConnectionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectionController.swift; sourceTree = "<group>"; };
 		3250E0451C259CB300465DBE /* HomeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 		32A4E6EB1C28456500A6ECBC /* HMTouchView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HMTouchView.swift; sourceTree = "<group>"; };
 		32ACC76A1C279B0E0019C36A /* ImageCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
@@ -184,6 +188,7 @@
 			isa = PBXGroup;
 			children = (
 				32F4F9C01C253AEB00BB4005 /* Connection.storyboard */,
+				324018271C291BBA00DC1B43 /* ConnectionController.swift */,
 			);
 			path = Connection;
 			sourceTree = "<group>";
@@ -209,6 +214,7 @@
 			isa = PBXGroup;
 			children = (
 				32F4F9C41C253B0B00BB4005 /* Personal.storyboard */,
+				324018251C2919F100DC1B43 /* PersonalController.swift */,
 			);
 			path = Personal;
 			sourceTree = "<group>";
@@ -400,6 +406,7 @@
 				32ACC77D1C279B0E0019C36A /* Resource.swift in Sources */,
 				32F4F9B41C25369400BB4005 /* CYLTabBarController.m in Sources */,
 				32ACC7771C279B0E0019C36A /* ImageCache.swift in Sources */,
+				324018261C2919F100DC1B43 /* PersonalController.swift in Sources */,
 				32ACC7801C279B0E0019C36A /* UIButton+Kingfisher.swift in Sources */,
 				32F4F9B91C2537F900BB4005 /* MainTabBarController.swift in Sources */,
 				32ACC77C1C279B0E0019C36A /* KingfisherOptionsInfo.swift in Sources */,
@@ -410,6 +417,7 @@
 				32ACC7781C279B0E0019C36A /* ImageDownloader.swift in Sources */,
 				32F4F9B21C25369400BB4005 /* CYLPlusButton.m in Sources */,
 				32ACC77B1C279B0E0019C36A /* KingfisherOptions.swift in Sources */,
+				324018281C291BBA00DC1B43 /* ConnectionController.swift in Sources */,
 				32F4F9B31C25369400BB4005 /* CYLTabBar.m in Sources */,
 				32ACC7811C279B0E0019C36A /* UIImage+Extension.swift in Sources */,
 				32ACC77F1C279B0E0019C36A /* ThreadHelper.swift in Sources */,
