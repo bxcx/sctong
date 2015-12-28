@@ -10,37 +10,50 @@ import UIKit
 import Reindeer
 import SnapKit
 
-class HomeController: UIViewController {
-
+class HomeController: BaseViewController {
+    
     @IBOutlet weak var scrollLayout: UIView!
     
     @IBOutlet weak var circleListLayout: HMTouchView!
     @IBOutlet weak var personListLayout: HMTouchView!
     @IBOutlet weak var priceListLayout: HMTouchView!
     @IBOutlet weak var marketLayout: HMTouchView!
-
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    var news:NewsDomain?
+    
+    override func loadData() {
+        //请求地址
+        let url = "http://apis.baidu.com/cd_boco/chinanews/testnewsapi"
+        //如果需要传参
+        let params = ["query":"{'device':'android','catid':1,'pagesize':3,'sid':'11142'}"]
         
-        self.automaticallyAdjustsScrollViewInsets = false
-        self.extendedLayoutIncludesOpaqueBars = false
-        self.edgesForExtendedLayout = UIRectEdge.None
-        
+        HMRequest<NewsDomain>.get(url, params: params) { (news, error) -> () in
+            //请求数据成功后调用
+            self.news = news
+            self.initUI()
+        }
+    }
+    
+    override func initUI() {
         initBanner()
         initLayout()
     }
-
+    
     ///广告位
     func initBanner(){
-
-        let anotherBanner = BannerPageViewController()
-        scrollLayout.addSubview(anotherBanner.view)
         
+        let anotherBanner = BannerPageViewController()
+        var thumbUrls:[AnyObject?] = []
+        for data in (news?.data)! {
+            thumbUrls.append(data.thumb!)
+        }
+        anotherBanner.images = thumbUrls
+        
+        scrollLayout.addSubview(anotherBanner.view)
         anotherBanner.view.snp_makeConstraints { (make) -> Void in
             make.edges.equalTo(self.scrollLayout)
         }
-
+        
         anotherBanner.interval = 3 //3秒自动切换下一张
         anotherBanner.placeholderImage = UIImage(named: "placeholder") //加载完成前显示的图片
         anotherBanner.setRemoteImageFetche({ (imageView, url, placeHolderImage) -> Void in
@@ -52,47 +65,28 @@ class HomeController: UIViewController {
             print(index)
         })
         
-        //请求地址
-        let url = "http://apis.baidu.com/cd_boco/chinanews/testnewsapi"
-        //如果需要传参
-        let params = ["query":"{'device':'android','catid':1,'pagesize':3,'sid':'11142'}"]
+        anotherBanner.startRolling()
         
-        HMRequest<NewsDomain>.get(url, params: params) { (news, error) -> () in
-            print(news)
-            
-            var thumbUrls:[AnyObject?] = []
-            for data in (news?.data)! {
-                thumbUrls.append(data.thumb!)
-            }
-            
-            anotherBanner.images = thumbUrls
-            anotherBanner.startRolling()
-        }
         
-
     }
     
+    ///商圈、人脉、供应、求购
     func initLayout(){
         HMTouchView.setOnClickHandler([circleListLayout,personListLayout,priceListLayout,marketLayout]) { (id) -> Void in
             print(id)
+            
+            var vc:UIViewController?
+            
+            switch(id){
+            case "priceListLayout"?:
+                vc = PriceListController()
+                vc?.hidesBottomBarWhenPushed = true
+                self.navigationController?.pushViewController(vc!, animated: true)
+            default:
+            
+            break;
+            }
         }
-//        circleListLayout.click { (id) -> Void in
-//            print("hello")
-//        }
-//        personListLayout.click { (id) -> Void in
-//            print("hello")
-//        }
-//        priceListLayout.click { (id) -> Void in
-//            print("hello")
-//        }
-//        marketLayout.click { (id) -> Void in
-//            print("hello")
-//        }
     }
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-    }
-    
-
 }

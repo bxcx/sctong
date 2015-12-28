@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3235341D1C30F30C00C2B01F /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3235341C1C30F30C00C2B01F /* BaseViewController.swift */; };
+		3235341F1C30F6BC00C2B01F /* BaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3235341E1C30F6BC00C2B01F /* BaseTableViewController.swift */; };
+		323534211C3102C100C2B01F /* BaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323534201C3102C100C2B01F /* BaseTableViewCell.swift */; };
+		323534261C310B2000C2B01F /* PriceListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323534251C310B2000C2B01F /* PriceListController.swift */; };
+		323534281C310E0700C2B01F /* PriceDomain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323534271C310E0700C2B01F /* PriceDomain.swift */; };
+		3235342D1C310FA600C2B01F /* PriceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3235342B1C310FA600C2B01F /* PriceCell.swift */; };
+		3235342E1C310FA600C2B01F /* PriceCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3235342C1C310FA600C2B01F /* PriceCell.xib */; };
 		323748481C2468A900048B2A /* MapController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323748471C2468A900048B2A /* MapController.swift */; };
 		324018261C2919F100DC1B43 /* PersonalController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324018251C2919F100DC1B43 /* PersonalController.swift */; };
 		324018281C291BBA00DC1B43 /* ConnectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324018271C291BBA00DC1B43 /* ConnectionController.swift */; };
@@ -46,6 +53,13 @@
 
 /* Begin PBXFileReference section */
 		2B3F5FE12BD970E376114AB3 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		3235341C1C30F30C00C2B01F /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		3235341E1C30F6BC00C2B01F /* BaseTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTableViewController.swift; sourceTree = "<group>"; };
+		323534201C3102C100C2B01F /* BaseTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTableViewCell.swift; sourceTree = "<group>"; };
+		323534251C310B2000C2B01F /* PriceListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PriceListController.swift; sourceTree = "<group>"; };
+		323534271C310E0700C2B01F /* PriceDomain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PriceDomain.swift; sourceTree = "<group>"; };
+		3235342B1C310FA600C2B01F /* PriceCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PriceCell.swift; sourceTree = "<group>"; };
+		3235342C1C310FA600C2B01F /* PriceCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PriceCell.xib; sourceTree = "<group>"; };
 		323748411C2462E700048B2A /* sctong-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "sctong-Bridging-Header.h"; sourceTree = "<group>"; };
 		323748471C2468A900048B2A /* MapController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapController.swift; sourceTree = "<group>"; };
 		324018251C2919F100DC1B43 /* PersonalController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonalController.swift; sourceTree = "<group>"; };
@@ -103,6 +117,43 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3235341B1C30F22E00C2B01F /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				3235341C1C30F30C00C2B01F /* BaseViewController.swift */,
+				3235341E1C30F6BC00C2B01F /* BaseTableViewController.swift */,
+				323534201C3102C100C2B01F /* BaseTableViewCell.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		323534221C310ADB00C2B01F /* Public */ = {
+			isa = PBXGroup;
+			children = (
+				323534231C310ADB00C2B01F /* Person */,
+				323534241C310ADB00C2B01F /* Price */,
+			);
+			path = Public;
+			sourceTree = "<group>";
+		};
+		323534231C310ADB00C2B01F /* Person */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Person;
+			sourceTree = "<group>";
+		};
+		323534241C310ADB00C2B01F /* Price */ = {
+			isa = PBXGroup;
+			children = (
+				323534251C310B2000C2B01F /* PriceListController.swift */,
+				323534271C310E0700C2B01F /* PriceDomain.swift */,
+				3235342B1C310FA600C2B01F /* PriceCell.swift */,
+				3235342C1C310FA600C2B01F /* PriceCell.xib */,
+			);
+			path = Price;
+			sourceTree = "<group>";
+		};
 		324018291C29911900DC1B43 /* Http */ = {
 			isa = PBXGroup;
 			children = (
@@ -143,6 +194,7 @@
 		32F4F9A91C25369400BB4005 /* Library */ = {
 			isa = PBXGroup;
 			children = (
+				3235341B1C30F22E00C2B01F /* Base */,
 				324018291C29911900DC1B43 /* Http */,
 				32A4E6EA1C2844A500A6ECBC /* View */,
 				32F4F9AA1C25369400BB4005 /* Resource */,
@@ -183,6 +235,7 @@
 		32F4F9B61C25370A00BB4005 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				323534221C310ADB00C2B01F /* Public */,
 				32F4F9B71C25370A00BB4005 /* Main */,
 			);
 			path = Controller;
@@ -352,6 +405,7 @@
 			files = (
 				32FD4E921C245DD200BDEE08 /* LaunchScreen.storyboard in Resources */,
 				32F4F9BF1C253AD900BB4005 /* Home.storyboard in Resources */,
+				3235342E1C310FA600C2B01F /* PriceCell.xib in Resources */,
 				32F4F9C11C253AEB00BB4005 /* Connection.storyboard in Resources */,
 				32FD4E8F1C245DD200BDEE08 /* Assets.xcassets in Resources */,
 				32FD4E9A1C245EC800BDEE08 /* Podfile in Resources */,
@@ -421,11 +475,15 @@
 				32ACC7791C279B0E0019C36A /* ImageTransition.swift in Sources */,
 				32ACC77E1C279B0E0019C36A /* String+MD5.swift in Sources */,
 				32ACC77D1C279B0E0019C36A /* Resource.swift in Sources */,
+				323534211C3102C100C2B01F /* BaseTableViewCell.swift in Sources */,
+				3235341D1C30F30C00C2B01F /* BaseViewController.swift in Sources */,
 				32F4F9B41C25369400BB4005 /* CYLTabBarController.m in Sources */,
 				32ACC7771C279B0E0019C36A /* ImageCache.swift in Sources */,
 				324018261C2919F100DC1B43 /* PersonalController.swift in Sources */,
 				32ACC7801C279B0E0019C36A /* UIButton+Kingfisher.swift in Sources */,
+				3235341F1C30F6BC00C2B01F /* BaseTableViewController.swift in Sources */,
 				32F4F9B91C2537F900BB4005 /* MainTabBarController.swift in Sources */,
+				323534261C310B2000C2B01F /* PriceListController.swift in Sources */,
 				32ACC77C1C279B0E0019C36A /* KingfisherOptionsInfo.swift in Sources */,
 				3240182D1C29913D00DC1B43 /* HMRequest.swift in Sources */,
 				3250E0461C259CB300465DBE /* HomeController.swift in Sources */,
@@ -441,6 +499,8 @@
 				3240182B1C29911900DC1B43 /* JSONHelper.swift in Sources */,
 				32ACC77F1C279B0E0019C36A /* ThreadHelper.swift in Sources */,
 				3240182F1C29977D00DC1B43 /* NewsDomain.swift in Sources */,
+				3235342D1C310FA600C2B01F /* PriceCell.swift in Sources */,
+				323534281C310E0700C2B01F /* PriceDomain.swift in Sources */,
 				32FD4E881C245DD200BDEE08 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
