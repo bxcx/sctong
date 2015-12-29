@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Haneke
 
 class PriceCell: BaseTableViewCell {
 

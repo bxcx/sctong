@@ -21,19 +21,9 @@
 		3240182D1C29913D00DC1B43 /* HMRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3240182C1C29913D00DC1B43 /* HMRequest.swift */; };
 		3240182F1C29977D00DC1B43 /* NewsDomain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3240182E1C29977D00DC1B43 /* NewsDomain.swift */; };
 		3250E0461C259CB300465DBE /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3250E0451C259CB300465DBE /* HomeController.swift */; };
+		3282005A1C324E0100DF0112 /* ColorLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328200591C324E0100DF0112 /* ColorLog.swift */; };
+		3282005C1C3264D900DF0112 /* SwiftNotice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3282005B1C3264D900DF0112 /* SwiftNotice.swift */; };
 		32A4E6EC1C28456500A6ECBC /* HMTouchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A4E6EB1C28456500A6ECBC /* HMTouchView.swift */; };
-		32ACC7771C279B0E0019C36A /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32ACC76A1C279B0E0019C36A /* ImageCache.swift */; };
-		32ACC7781C279B0E0019C36A /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32ACC76B1C279B0E0019C36A /* ImageDownloader.swift */; };
-		32ACC7791C279B0E0019C36A /* ImageTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32ACC76C1C279B0E0019C36A /* ImageTransition.swift */; };
-		32ACC77A1C279B0E0019C36A /* KingfisherManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32ACC76E1C279B0E0019C36A /* KingfisherManager.swift */; };
-		32ACC77B1C279B0E0019C36A /* KingfisherOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32ACC76F1C279B0E0019C36A /* KingfisherOptions.swift */; };
-		32ACC77C1C279B0E0019C36A /* KingfisherOptionsInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32ACC7701C279B0E0019C36A /* KingfisherOptionsInfo.swift */; };
-		32ACC77D1C279B0E0019C36A /* Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32ACC7711C279B0E0019C36A /* Resource.swift */; };
-		32ACC77E1C279B0E0019C36A /* String+MD5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32ACC7721C279B0E0019C36A /* String+MD5.swift */; };
-		32ACC77F1C279B0E0019C36A /* ThreadHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32ACC7731C279B0E0019C36A /* ThreadHelper.swift */; };
-		32ACC7801C279B0E0019C36A /* UIButton+Kingfisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32ACC7741C279B0E0019C36A /* UIButton+Kingfisher.swift */; };
-		32ACC7811C279B0E0019C36A /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32ACC7751C279B0E0019C36A /* UIImage+Extension.swift */; };
-		32ACC7821C279B0E0019C36A /* UIImageView+Kingfisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32ACC7761C279B0E0019C36A /* UIImageView+Kingfisher.swift */; };
 		32F4F9B21C25369400BB4005 /* CYLPlusButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 32F4F9AD1C25369400BB4005 /* CYLPlusButton.m */; };
 		32F4F9B31C25369400BB4005 /* CYLTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 32F4F9AF1C25369400BB4005 /* CYLTabBar.m */; };
 		32F4F9B41C25369400BB4005 /* CYLTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32F4F9B11C25369400BB4005 /* CYLTabBarController.m */; };
@@ -68,20 +58,9 @@
 		3240182C1C29913D00DC1B43 /* HMRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HMRequest.swift; sourceTree = "<group>"; };
 		3240182E1C29977D00DC1B43 /* NewsDomain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsDomain.swift; sourceTree = "<group>"; };
 		3250E0451C259CB300465DBE /* HomeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
+		328200591C324E0100DF0112 /* ColorLog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorLog.swift; sourceTree = "<group>"; };
+		3282005B1C3264D900DF0112 /* SwiftNotice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftNotice.swift; sourceTree = "<group>"; };
 		32A4E6EB1C28456500A6ECBC /* HMTouchView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HMTouchView.swift; sourceTree = "<group>"; };
-		32ACC76A1C279B0E0019C36A /* ImageCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
-		32ACC76B1C279B0E0019C36A /* ImageDownloader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageDownloader.swift; sourceTree = "<group>"; };
-		32ACC76C1C279B0E0019C36A /* ImageTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageTransition.swift; sourceTree = "<group>"; };
-		32ACC76D1C279B0E0019C36A /* Kingfisher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Kingfisher.h; sourceTree = "<group>"; };
-		32ACC76E1C279B0E0019C36A /* KingfisherManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KingfisherManager.swift; sourceTree = "<group>"; };
-		32ACC76F1C279B0E0019C36A /* KingfisherOptions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KingfisherOptions.swift; sourceTree = "<group>"; };
-		32ACC7701C279B0E0019C36A /* KingfisherOptionsInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KingfisherOptionsInfo.swift; sourceTree = "<group>"; };
-		32ACC7711C279B0E0019C36A /* Resource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Resource.swift; sourceTree = "<group>"; };
-		32ACC7721C279B0E0019C36A /* String+MD5.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+MD5.swift"; sourceTree = "<group>"; };
-		32ACC7731C279B0E0019C36A /* ThreadHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThreadHelper.swift; sourceTree = "<group>"; };
-		32ACC7741C279B0E0019C36A /* UIButton+Kingfisher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+Kingfisher.swift"; sourceTree = "<group>"; };
-		32ACC7751C279B0E0019C36A /* UIImage+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
-		32ACC7761C279B0E0019C36A /* UIImageView+Kingfisher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+Kingfisher.swift"; sourceTree = "<group>"; };
 		32F4F9AC1C25369400BB4005 /* CYLPlusButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLPlusButton.h; sourceTree = "<group>"; };
 		32F4F9AD1C25369400BB4005 /* CYLPlusButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYLPlusButton.m; sourceTree = "<group>"; };
 		32F4F9AE1C25369400BB4005 /* CYLTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLTabBar.h; sourceTree = "<group>"; };
@@ -171,26 +150,6 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		32ACC7691C279B0E0019C36A /* Kingfisher */ = {
-			isa = PBXGroup;
-			children = (
-				32ACC76A1C279B0E0019C36A /* ImageCache.swift */,
-				32ACC76B1C279B0E0019C36A /* ImageDownloader.swift */,
-				32ACC76C1C279B0E0019C36A /* ImageTransition.swift */,
-				32ACC76D1C279B0E0019C36A /* Kingfisher.h */,
-				32ACC76E1C279B0E0019C36A /* KingfisherManager.swift */,
-				32ACC76F1C279B0E0019C36A /* KingfisherOptions.swift */,
-				32ACC7701C279B0E0019C36A /* KingfisherOptionsInfo.swift */,
-				32ACC7711C279B0E0019C36A /* Resource.swift */,
-				32ACC7721C279B0E0019C36A /* String+MD5.swift */,
-				32ACC7731C279B0E0019C36A /* ThreadHelper.swift */,
-				32ACC7741C279B0E0019C36A /* UIButton+Kingfisher.swift */,
-				32ACC7751C279B0E0019C36A /* UIImage+Extension.swift */,
-				32ACC7761C279B0E0019C36A /* UIImageView+Kingfisher.swift */,
-			);
-			path = Kingfisher;
-			sourceTree = "<group>";
-		};
 		32F4F9A91C25369400BB4005 /* Library */ = {
 			isa = PBXGroup;
 			children = (
@@ -205,8 +164,9 @@
 		32F4F9AA1C25369400BB4005 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
-				32ACC7691C279B0E0019C36A /* Kingfisher */,
 				32F4F9AB1C25369400BB4005 /* CYLTabBarController */,
+				328200591C324E0100DF0112 /* ColorLog.swift */,
+				3282005B1C3264D900DF0112 /* SwiftNotice.swift */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -472,32 +432,22 @@
 			files = (
 				32FD4E8A1C245DD200BDEE08 /* ViewController.swift in Sources */,
 				323748481C2468A900048B2A /* MapController.swift in Sources */,
-				32ACC7791C279B0E0019C36A /* ImageTransition.swift in Sources */,
-				32ACC77E1C279B0E0019C36A /* String+MD5.swift in Sources */,
-				32ACC77D1C279B0E0019C36A /* Resource.swift in Sources */,
 				323534211C3102C100C2B01F /* BaseTableViewCell.swift in Sources */,
 				3235341D1C30F30C00C2B01F /* BaseViewController.swift in Sources */,
 				32F4F9B41C25369400BB4005 /* CYLTabBarController.m in Sources */,
-				32ACC7771C279B0E0019C36A /* ImageCache.swift in Sources */,
 				324018261C2919F100DC1B43 /* PersonalController.swift in Sources */,
-				32ACC7801C279B0E0019C36A /* UIButton+Kingfisher.swift in Sources */,
 				3235341F1C30F6BC00C2B01F /* BaseTableViewController.swift in Sources */,
+				3282005A1C324E0100DF0112 /* ColorLog.swift in Sources */,
 				32F4F9B91C2537F900BB4005 /* MainTabBarController.swift in Sources */,
 				323534261C310B2000C2B01F /* PriceListController.swift in Sources */,
-				32ACC77C1C279B0E0019C36A /* KingfisherOptionsInfo.swift in Sources */,
 				3240182D1C29913D00DC1B43 /* HMRequest.swift in Sources */,
 				3250E0461C259CB300465DBE /* HomeController.swift in Sources */,
-				32ACC77A1C279B0E0019C36A /* KingfisherManager.swift in Sources */,
-				32ACC7821C279B0E0019C36A /* UIImageView+Kingfisher.swift in Sources */,
 				32A4E6EC1C28456500A6ECBC /* HMTouchView.swift in Sources */,
-				32ACC7781C279B0E0019C36A /* ImageDownloader.swift in Sources */,
 				32F4F9B21C25369400BB4005 /* CYLPlusButton.m in Sources */,
-				32ACC77B1C279B0E0019C36A /* KingfisherOptions.swift in Sources */,
 				324018281C291BBA00DC1B43 /* ConnectionController.swift in Sources */,
 				32F4F9B31C25369400BB4005 /* CYLTabBar.m in Sources */,
-				32ACC7811C279B0E0019C36A /* UIImage+Extension.swift in Sources */,
 				3240182B1C29911900DC1B43 /* JSONHelper.swift in Sources */,
-				32ACC77F1C279B0E0019C36A /* ThreadHelper.swift in Sources */,
+				3282005C1C3264D900DF0112 /* SwiftNotice.swift in Sources */,
 				3240182F1C29977D00DC1B43 /* NewsDomain.swift in Sources */,
 				3235342D1C310FA600C2B01F /* PriceCell.swift in Sources */,
 				323534281C310E0700C2B01F /* PriceDomain.swift in Sources */,

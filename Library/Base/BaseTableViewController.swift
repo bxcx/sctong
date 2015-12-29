@@ -37,8 +37,6 @@ class BaseTableViewController: BaseViewController,UITableViewDelegate,UITableVie
     var dataList:[HMSerializable] = []
     
     override func viewDidLoad() {
-        super.viewDidLoad()
-        
         //如果布局中没有tableView，则默认通过代码创建一个全屏的tableView
         if tableView == nil {
             tableView =  UITableView(frame: CGRect(x: 0, y: 0, width: self.view.frame.width, height: self.view.frame.height - (self.navigationController?.navigationBar.frame.height)! - UIApplication.sharedApplication().statusBarFrame.height), style: UITableViewStyle.Plain)
@@ -47,6 +45,8 @@ class BaseTableViewController: BaseViewController,UITableViewDelegate,UITableVie
         
         tableView.delegate = self
         tableView.dataSource = self
+        
+        super.viewDidLoad()
     }
     
     /**

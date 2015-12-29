@@ -51,4 +51,25 @@ class BaseViewController: UIViewController {
     func initUI(){}
     
     
+//    /**
+//     检查返回数据是否正确
+//     
+//     - parameter obj:   result
+//     - parameter error: error
+//     
+//     - returns: true/false
+//     */
+//    func checkResult(obj:HMConvertible? ,_ error:NSError?) -> Bool{
+//        if error != nil {
+//            showError(error?.description)
+//            return false
+//        }
+//        if obj?.errNum != 0 {
+//            showError(obj?.errMsg)
+//            return false
+//        }
+//        
+//        return true
+//    }
+    
 }

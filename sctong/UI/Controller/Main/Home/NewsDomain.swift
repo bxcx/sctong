@@ -10,9 +10,9 @@ import Foundation
 
 struct NewsDomain: HMSerializable ,HMConvertible{
 
-    var error: Int = 0
+    var errNum: Int = 0
     
-    var msg: Int = 0
+    var errMsg: String?
     
     var data: [NewsData]?
     
@@ -23,8 +23,8 @@ struct NewsDomain: HMSerializable ,HMConvertible{
     }
     
     init(data: [String: AnyObject]) {
-        error <-- data["error"]
-        msg <-- data["msg"]
+        errNum <-- data["errNum"]
+        errMsg <-- data["errMsg"]
         self.data <-- data["data"]
     }
     

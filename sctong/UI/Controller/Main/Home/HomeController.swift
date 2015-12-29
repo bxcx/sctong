@@ -9,6 +9,8 @@
 import UIKit
 import Reindeer
 import SnapKit
+import Kingfisher
+import Alamofire
 
 class HomeController: BaseViewController {
     
@@ -27,11 +29,18 @@ class HomeController: BaseViewController {
         //如果需要传参
         let params = ["query":"{'device':'android','catid':1,'pagesize':3,'sid':'11142'}"]
         
-        HMRequest<NewsDomain>.get(url, params: params) { (news, error) -> () in
-            //请求数据成功后调用
-            self.news = news
-            self.initUI()
+        let headers = ["apikey":"be910c69ec688ba099d0091e19c21033"]
+        
+        HMRequest<NewsDomain>.go(.GET, url, cache: true, params: params, headers:headers){ (news, error) -> () in
+            
+            if HMRequest<NewsDomain>.checkResult(news, error, self) {
+                //请求数据成功后调用
+                self.news = news
+                self.initUI()
+            }
+            
         }
+        
     }
     
     override func initUI() {
@@ -83,8 +92,8 @@ class HomeController: BaseViewController {
                 vc?.hidesBottomBarWhenPushed = true
                 self.navigationController?.pushViewController(vc!, animated: true)
             default:
-            
-            break;
+                
+                break;
             }
         }
     }
