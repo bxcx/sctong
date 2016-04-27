@@ -2,6 +2,8 @@
 xcode7.2 &amp; swift2.1.1
 
 MainTabBarController中的PlusButtonSubclass需要再添加如下代码：
+
+    //修复点击中间按钮无法响应
     class func plusButton() -> AnyObject! {
         let button:PlusButtonSubclass =  PlusButtonSubclass()
         button.setImage(UIImage(named: "icon_middle_add"), forState: UIControlState.Normal)
@@ -15,4 +17,3 @@ MainTabBarController中的PlusButtonSubclass需要再添加如下代码：
         
         return  button
     }
-    不然点击事件无法响应。
